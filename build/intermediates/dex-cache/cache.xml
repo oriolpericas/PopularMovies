@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_ff66e67609acdaeb4afbd34a3ea70a923a763242\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fd5ca8e49113ce7be5509b5ad95b0709299f151b">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4afed88a38e5e42dfb3dea34774b3689d172db6c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\PC-Oriol\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_4f5f48349e159002e52a210e5bf48d65f1914aee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_fe52a2a8d9c540b5140bd5eee89a36d33d4b05ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_3822b399f8aa38f69c683bea5c5d47c2f1a2cd9e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0cef3036726ec4843751ed3115c7b712f7c7738e">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_54f0bbe9c3eaf3862b90e992ec43477dc675bc92\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_cbbc4d5129696c97b2fc557338e457161356927c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_f85a1daa131e34a9ddf7495ca333d71ff13b57fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_f35cb94fcfd179dd8de09246afdb3f5ebf17133a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_67b50b0faf6a87431cc88b8a877e149e4a388d1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_455ed4030ebf57d4ac4ac41bce8be2c4a1e30ce4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_a56e94b9fea40b08335f1887c98b0a80c43b9082\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_5b680cb14e448dcf6d32a51c2910d98474c00c01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="D:\Oriol\Udacity\AndroidFastTrack\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_d2794b371c54265d4cfac4780ebf7f2e408b9a43\classes.dex" />
+    </item>
+
+</items>
