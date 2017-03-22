@@ -7,6 +7,7 @@ public class MovieData implements Parcelable {
     public String poster_path;
     public String overview;
     public String release_date;
+    public int id;
     public String original_title;
     public float vote_average;
 
@@ -14,14 +15,16 @@ public class MovieData implements Parcelable {
         poster_path = in.readString();
         overview = in.readString();
         release_date = in.readString();
+        id = in.readInt();
         original_title = in.readString();
         vote_average = in.readFloat();
     }
 
-    public MovieData(String poster_path, String overview, String release_date,String original_title, float vote_average) {
+    public MovieData(String poster_path, String overview, String release_date, int id, String original_title, float vote_average) {
         this.poster_path = poster_path;
         this.overview = overview;
         this.release_date = release_date;
+        this.id = id;
         this.original_title = original_title;
         this.vote_average = vote_average;
     }
@@ -36,6 +39,7 @@ public class MovieData implements Parcelable {
         dest.writeString(poster_path);
         dest.writeString(overview);
         dest.writeString(release_date);
+        dest.writeInt(id);
         dest.writeString(original_title);
         dest.writeFloat(vote_average);
     }

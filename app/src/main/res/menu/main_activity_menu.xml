@@ -23,4 +23,12 @@
         android:title="@string/menu_sort_popularity"
         app:showAsAction="never"/>
 
+    <item
+        android:id="@+id/menu_toggle_favorites"
+        android:orderInCategory="4"
+        android:title="Show favorites"
+        android:icon="@drawable/ic_star_empty"
+        app:showAsAction="always"/>
+
+
 </menu>
