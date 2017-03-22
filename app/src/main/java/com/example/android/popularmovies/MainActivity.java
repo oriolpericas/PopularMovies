@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     private ProgressBar mLoadingIndicator;
     private TextView mErrorMessageDisplay;
     // Hold the current sorting mode
-    private String sortingMode;
+    private String sortingMode = NetworkUtils.PATH_POPULAR;
     // Toggle display or hide favorites
     private boolean showFavorites = false;
     private Menu mMenu;
@@ -52,6 +52,12 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
 
         // Create and set layout  manager
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+        // Restore scroll position and sorting mode if available
+        if (savedInstanceState != null) {
+            int scrollPosition = savedInstanceState.getInt("scroll_position");
+            layoutManager.scrollToPosition(scrollPosition);
+            sortingMode = savedInstanceState.getString("sorting_mode");
+        }
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
         // Create and set the movies adapter
@@ -59,9 +65,6 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         mRecyclerView.setAdapter(mAdapter);
         // Create and set the favorite movies adapter
         mFavoriteMoviesAdapter = new FavoriteMoviesAdapter(this);
-
-        // Default sorting mode is by popularity
-        sortingMode = NetworkUtils.PATH_POPULAR;
         // Now load the data in a background task
         loadData();
 
@@ -242,5 +245,22 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         intent.putExtra("movie", movie);
         startActivity(intent);
     }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        // Save the sorting mode
+        super.onSaveInstanceState(outState);
+        outState.putString("sorting_mode", sortingMode);
+
+        // Save the recycler view scroll position
+        RecyclerView.LayoutManager layoutManager = mRecyclerView.getLayoutManager();
+        if (layoutManager != null ){
+            int scrollPosition = ((GridLayoutManager) layoutManager).findFirstVisibleItemPosition();
+            outState.putInt("scroll_position", scrollPosition);
+        }
+    }
+
+
 
 }
