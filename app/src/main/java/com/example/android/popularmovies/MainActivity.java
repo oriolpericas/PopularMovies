@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     private FavoriteMoviesAdapter mFavoriteMoviesAdapter;
     // Item touch helper used to swipe off favorited movies
     private ItemTouchHelper mItemTouchHelper;
+    // Scroll position
+    private int mScrollPosition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,15 +51,8 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         mLoadingIndicator = (ProgressBar) findViewById(R.id.pb_loading_indicator);
         mErrorMessageDisplay = (TextView) findViewById(R.id.tv_error_message);
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_discovery);
-
         // Create and set layout  manager
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
-        // Restore scroll position and sorting mode if available
-        if (savedInstanceState != null) {
-            int scrollPosition = savedInstanceState.getInt("scroll_position");
-            layoutManager.scrollToPosition(scrollPosition);
-            sortingMode = savedInstanceState.getString("sorting_mode");
-        }
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
         // Create and set the movies adapter
@@ -65,8 +60,16 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         mRecyclerView.setAdapter(mAdapter);
         // Create and set the favorite movies adapter
         mFavoriteMoviesAdapter = new FavoriteMoviesAdapter(this);
+
+        // Restore scroll position and sorting mode
+        if (savedInstanceState != null) {
+            sortingMode = savedInstanceState.getString("sorting_mode");
+            mScrollPosition = savedInstanceState.getInt("scroll_position");
+        }
         // Now load the data in a background task
         loadData();
+
+
 
         // Create a touch helper which will be used to delete favorited movies
         mItemTouchHelper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
@@ -135,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
                 showMoviePostersView();
                 // Assign the movie data to the adapter
                 mAdapter.setMovieData(data);
+                mRecyclerView.scrollToPosition(mScrollPosition);
             } else {
                 showErrorMessage();
             }
@@ -252,15 +256,12 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         // Save the sorting mode
         super.onSaveInstanceState(outState);
         outState.putString("sorting_mode", sortingMode);
-
-        // Save the recycler view scroll position
+        // Save scroll position
         RecyclerView.LayoutManager layoutManager = mRecyclerView.getLayoutManager();
-        if (layoutManager != null ){
+        if(layoutManager != null && layoutManager instanceof GridLayoutManager){
             int scrollPosition = ((GridLayoutManager) layoutManager).findFirstVisibleItemPosition();
             outState.putInt("scroll_position", scrollPosition);
         }
     }
-
-
 
 }
